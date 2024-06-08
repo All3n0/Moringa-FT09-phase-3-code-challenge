@@ -37,7 +37,7 @@ def test_magazine_class():
 
     # Test 5: Attempt to set an invalid name (should raise an exception)
     try:
-        magazine.name = "T"  # Name too short
+        magazine.name = "T"  
     except ValueError as e:
         print(f"Test 5 Passed: {e}")
     except Exception as e:
@@ -45,7 +45,7 @@ def test_magazine_class():
 
     # Test 6: Attempt to set an invalid category (should raise an exception)
     try:
-        magazine.category = ""  # Category too short
+        magazine.category = ""
     except TypeError as e:
         print(f"Test 6 Passed: {e}")
     except Exception as e:

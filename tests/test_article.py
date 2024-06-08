@@ -23,8 +23,8 @@ def test_article_class():
     try:
         article = Article(author, magazine, "Understanding AI")
         assert article.title == "Understanding AI"
-        assert article.author.id == 1
-        assert article.magazine.id == 1
+        assert article.author().id == 1
+        assert article.magazine().id == 1
         print(f"Test 1 Passed: {article}")
     except Exception as e:
         print(f"Test 1 Failed: {e}")
